@@ -31,9 +31,9 @@ cd $dir
 
 **********************************************************************
 
-import excel using "$datadir/raw/crosscountry.xlsx", first
+import excel using "$datadir/raw/crosscountry.xlsx", first 
 
-tabstat LogGDPpercapitain2010-SouthAsia, stats(mean sd)
+tabstat LogGDPpercapitain2010-SouthAsia, stats(mean sd) // sum stats
 
 reg Under5mortality LogGDPpercapitain2010, vce(robust)
 
