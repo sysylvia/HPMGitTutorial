@@ -21,17 +21,12 @@ global datadir "/Users/sean/Documents/01RESEARCH/GitHub/GitTutorial/data"
 cd $dir
 }
 
-if c(username) == "" {
-global dir ""
-global output ""
-global outputtex ""
-global datadir ""
-cd $dir
-}
 
 **********************************************************************
 
 import excel using "$datadir/raw/crosscountry.xlsx", first 
+
+* blah blah
 
 tabstat LogGDPpercapitain2010-SouthAsia, stats(mean min) // sum stats
 
